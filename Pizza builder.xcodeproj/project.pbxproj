@@ -12,6 +12,10 @@
 		2CEAE1D71C3DD4CD006E7212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CEAE1D51C3DD4CD006E7212 /* Main.storyboard */; };
 		2CEAE1D91C3DD4CD006E7212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEAE1D81C3DD4CD006E7212 /* Assets.xcassets */; };
 		2CEAE1DC1C3DD4CD006E7212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CEAE1DA1C3DD4CD006E7212 /* LaunchScreen.storyboard */; };
+		2CEAE1E41C3DDEFF006E7212 /* MasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAE1E31C3DDEFF006E7212 /* MasaViewController.swift */; };
+		2CEAE1E61C3DE186006E7212 /* QuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAE1E51C3DE186006E7212 /* QuesoViewController.swift */; };
+		2CEAE1E81C3EB042006E7212 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAE1E71C3EB042006E7212 /* ConfirmationViewController.swift */; };
+		2CEAE1EA1C3EB08C006E7212 /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAE1E91C3EB08C006E7212 /* IngredientesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		2CEAE1D81C3DD4CD006E7212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CEAE1DB1C3DD4CD006E7212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CEAE1DD1C3DD4CD006E7212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CEAE1E31C3DDEFF006E7212 /* MasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaViewController.swift; sourceTree = "<group>"; };
+		2CEAE1E51C3DE186006E7212 /* QuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoViewController.swift; sourceTree = "<group>"; };
+		2CEAE1E71C3EB042006E7212 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		2CEAE1E91C3EB08C006E7212 /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			children = (
 				2CEAE1D11C3DD4CD006E7212 /* AppDelegate.swift */,
 				2CEAE1D31C3DD4CD006E7212 /* ViewController.swift */,
+				2CEAE1E31C3DDEFF006E7212 /* MasaViewController.swift */,
+				2CEAE1E51C3DE186006E7212 /* QuesoViewController.swift */,
+				2CEAE1E91C3EB08C006E7212 /* IngredientesViewController.swift */,
+				2CEAE1E71C3EB042006E7212 /* ConfirmationViewController.swift */,
 				2CEAE1D51C3DD4CD006E7212 /* Main.storyboard */,
 				2CEAE1D81C3DD4CD006E7212 /* Assets.xcassets */,
 				2CEAE1DA1C3DD4CD006E7212 /* LaunchScreen.storyboard */,
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CEAE1EA1C3EB08C006E7212 /* IngredientesViewController.swift in Sources */,
+				2CEAE1E61C3DE186006E7212 /* QuesoViewController.swift in Sources */,
+				2CEAE1E41C3DDEFF006E7212 /* MasaViewController.swift in Sources */,
 				2CEAE1D41C3DD4CD006E7212 /* ViewController.swift in Sources */,
 				2CEAE1D21C3DD4CD006E7212 /* AppDelegate.swift in Sources */,
+				2CEAE1E81C3EB042006E7212 /* ConfirmationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

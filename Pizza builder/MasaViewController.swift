@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MasaViewController.swift
 //  Pizza builder
 //
 //  Created by Dante Solorio on 1/6/16.
@@ -8,23 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MasaViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: UIBarButtonItem!
+    var pizzaSize: String!
     
-    let pizzaSize = ["Chica", "Mediana", "Grande"]
+    let masaType = ["Delgada", "Crujiente", "Gruesa"]
     var lastSelectedIndexPath: NSIndexPath!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.enabled = false
+        print("Pizza size \(pizzaSize)")
+        self.title = pizzaSize
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
     // MARK: Table view delegates
     
@@ -34,13 +38,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
-        cell.textLabel?.text = pizzaSize[indexPath.row]
+        
+        cell.textLabel?.text = masaType[indexPath.row]
         return cell
     }
-
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pizzaSize.count
+        return masaType.count
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -61,17 +65,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     // MARK: Actions
-
+    
     @IBAction func nextAction(sender:AnyObject){
-        self.performSegueWithIdentifier("chooseMasa", sender: self)
+        self.performSegueWithIdentifier("chooseQueso", sender: self)
     }
     
+    
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "chooseMasa"{
-            let destinationVC = segue.destinationViewController as! MasaViewController
-            destinationVC.pizzaSize = pizzaSize[lastSelectedIndexPath.row]
+        if segue.identifier == "chooseQueso"{
+            let destinationVC = segue.destinationViewController as! QuesoViewController
+            destinationVC.masaType = masaType[lastSelectedIndexPath.row]
+            destinationVC.pizzaSize = self.pizzaSize
         }
-        
     }
-}
+    
 
+}
