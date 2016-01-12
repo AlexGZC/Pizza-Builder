@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CE1DC691C454DCC00B82306 /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1DC681C454DCC00B82306 /* PizzaViewController.swift */; };
 		2CEAE1D21C3DD4CD006E7212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAE1D11C3DD4CD006E7212 /* AppDelegate.swift */; };
 		2CEAE1D41C3DD4CD006E7212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAE1D31C3DD4CD006E7212 /* ViewController.swift */; };
 		2CEAE1D71C3DD4CD006E7212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CEAE1D51C3DD4CD006E7212 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CE1DC681C454DCC00B82306 /* PizzaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaViewController.swift; sourceTree = "<group>"; };
 		2CEAE1CE1C3DD4CD006E7212 /* Pizza builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pizza builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CEAE1D11C3DD4CD006E7212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CEAE1D31C3DD4CD006E7212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				2CEAE1E51C3DE186006E7212 /* QuesoViewController.swift */,
 				2CEAE1E91C3EB08C006E7212 /* IngredientesViewController.swift */,
 				2CEAE1E71C3EB042006E7212 /* ConfirmationViewController.swift */,
+				2CE1DC681C454DCC00B82306 /* PizzaViewController.swift */,
 				2CEAE1D51C3DD4CD006E7212 /* Main.storyboard */,
 				2CEAE1D81C3DD4CD006E7212 /* Assets.xcassets */,
 				2CEAE1DA1C3DD4CD006E7212 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CEAE1EA1C3EB08C006E7212 /* IngredientesViewController.swift in Sources */,
+				2CE1DC691C454DCC00B82306 /* PizzaViewController.swift in Sources */,
 				2CEAE1E61C3DE186006E7212 /* QuesoViewController.swift in Sources */,
 				2CEAE1E41C3DDEFF006E7212 /* MasaViewController.swift in Sources */,
 				2CEAE1D41C3DD4CD006E7212 /* ViewController.swift in Sources */,
@@ -300,6 +304,7 @@
 				2CEAE1E21C3DD4CD006E7212 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

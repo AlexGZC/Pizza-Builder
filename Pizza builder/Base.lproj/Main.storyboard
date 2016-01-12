@@ -341,11 +341,51 @@
                         <outlet property="nextButton" destination="68A-de-y3w" id="7ab-UG-3e0"/>
                         <outlet property="quesoTypeLabel" destination="imf-8F-IlP" id="nps-2W-Lw6"/>
                         <outlet property="sizeLabel" destination="mWA-4U-atl" id="TCN-sA-hhH"/>
+                        <segue destination="Doh-E3-qsB" kind="show" identifier="pizzaSegue" id="Oky-Sh-z8A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHk-TB-v5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4087" y="374"/>
+        </scene>
+        <!--Pizza View Controller-->
+        <scene sceneID="2pG-ed-2Ig">
+            <objects>
+                <viewController storyboardIdentifier="PizzaViewController" id="Doh-E3-qsB" customClass="PizzaViewController" customModule="Pizza_builder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fbG-O0-t5t"/>
+                        <viewControllerLayoutGuide type="bottom" id="uMf-HN-Rji"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cDs-qf-89o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="33n-xL-HVc">
+                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="bgm-Cj-Aie"/>
+                                    <constraint firstAttribute="width" constant="250" id="dt9-uJ-OoG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Gracias por preparar tu pizza con nosotros!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CM-qS-WZ4">
+                                <rect key="frame" x="132" y="72" width="337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1CM-qS-WZ4" firstAttribute="centerX" secondItem="cDs-qf-89o" secondAttribute="centerX" id="AB3-Tj-AqD"/>
+                            <constraint firstItem="33n-xL-HVc" firstAttribute="centerX" secondItem="cDs-qf-89o" secondAttribute="centerX" id="ejg-3R-Thz"/>
+                            <constraint firstItem="33n-xL-HVc" firstAttribute="centerY" secondItem="cDs-qf-89o" secondAttribute="centerY" id="xQe-OV-cNi"/>
+                            <constraint firstItem="1CM-qS-WZ4" firstAttribute="top" secondItem="fbG-O0-t5t" secondAttribute="bottom" constant="8" id="yCk-BF-QgD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llF-9N-7fB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4813" y="374"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BzZ-8B-GvJ">
@@ -366,4 +406,7 @@
             <point key="canvasLocation" x="225" y="1034"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pizza" width="260" height="246"/>
+    </resources>
 </document>

@@ -53,9 +53,11 @@ class ConfirmationViewController: UIViewController{
     
     @IBAction func nextAction(sender:AnyObject){
         print("Confirm order!")
+        self.performSegueWithIdentifier("pizzaSegue", sender: self)
         let alert = UIAlertController(title: "Correcto", message: "Tu pizza ha sido enviada para preparación!", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
+        
     }
     
     
@@ -66,7 +68,7 @@ class ConfirmationViewController: UIViewController{
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "confirmationSegue"{
+        if segue.identifier == "pizzaSegue"{
            
             
         }
